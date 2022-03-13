@@ -8,6 +8,10 @@ const routes = [
     path: "/SearchPage",
     component: () => import("pages/SearchPage.vue"),
   },
+  {
+    path: "/SelectPlayer",
+    component: () => import("pages/SelectPlayer.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it

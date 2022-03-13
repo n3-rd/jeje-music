@@ -34,10 +34,10 @@
         v-ripple
         @click="
           storeSelectedSongInfo(
-            song.songTitle,
-            song.songArtist,
-            song.songImage,
-            song.songAlbum
+            song.title,
+            song.artist.name,
+            song.album.cover_small,
+            song.album.title
           )
         "
       >
@@ -93,6 +93,8 @@ export default defineComponent({
       localStorage.setItem("localSongArtist", songArtist);
       localStorage.setItem("localSongImage", songImage);
       localStorage.setItem("localSongAlbum", songAlbum);
+
+      this.$router.push("/SelectPlayer");
     },
   },
 });
