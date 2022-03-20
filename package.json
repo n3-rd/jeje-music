@@ -12,10 +12,13 @@
   },
   "dependencies": {
     "@quasar/extras": "^1.0.0",
+    "colorthief": "^2.3.2",
     "core-js": "^3.6.5",
+    "html-screen-capture-js": "^2.0.3",
     "quasar": "^2.0.0",
     "vue": "^3.0.0",
-    "vue-router": "^4.0.0"
+    "vue-router": "^4.0.0",
+    "vue-simple-icons": "^4.7.0"
   },
   "devDependencies": {
     "@babel/eslint-parser": "^7.13.14",

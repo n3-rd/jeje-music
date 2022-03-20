@@ -12,6 +12,14 @@ const routes = [
     path: "/SelectPlayer",
     component: () => import("pages/SelectPlayer.vue"),
   },
+  {
+    path: "/SpotifyPlayer",
+    component: () => import("pages/players/SpotifyPlayer.vue"),
+  },
+  {
+    path: "/OtoMusicPlayer",
+    component: () => import("pages/players/OtoMusicPlayer.vue"),
+  },
 
   // Always leave this as last one,
   // but you can also remove it

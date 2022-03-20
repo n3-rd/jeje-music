@@ -1,5 +1,26 @@
 // app global css in SCSS form
+
+@font-face {
+  font-family: DmsansRegular;
+  src: url(fonts/DMSans-Regular.ttf);
+}
+@font-face {
+  font-family: DmsansMedium;
+  src: url(fonts/DMSans-Medium.ttf);
+}
+@font-face {
+  font-family: DmsansBold;
+  src: url(fonts/DMSans-Bold.ttf);
+}
+
+$dmsans-regular: DmsansRegular;
+$dmsans-medium: DmsansMedium;
+$dmsans-bold: DmsansBold;
+
 a {
   color: initial;
   text-decoration: none;
+}
+body {
+  font-family: $dmsans-regular;
 }

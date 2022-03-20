@@ -37,7 +37,8 @@
             song.title,
             song.artist.name,
             song.album.cover_small,
-            song.album.title
+            song.album.title,
+            song.duration
           )
         "
       >
@@ -76,6 +77,7 @@ export default defineComponent({
       fetch(
         `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${this.searchSongText}&output=json`
       )
+        // fetch(`http://192.168.43.235:1987/deezer-emiliana.json`)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);
@@ -87,12 +89,14 @@ export default defineComponent({
       songName,
       songArtist,
       songImage,
-      songAlbum
+      songAlbum,
+      songDuration
     ) {
       localStorage.setItem("localSongName", songName);
       localStorage.setItem("localSongArtist", songArtist);
       localStorage.setItem("localSongImage", songImage);
       localStorage.setItem("localSongAlbum", songAlbum);
+      localStorage.setItem("localSongDuration", songDuration);
 
       this.$router.push("/SelectPlayer");
     },
