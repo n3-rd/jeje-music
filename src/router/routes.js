@@ -1,3 +1,6 @@
+import SpotifyPlayer from "app/src/pages/players/SpotifyPlayer";
+import OtoMusicPlayer from "app/src/pages/players/OtoMusicPlayer";
+
 const routes = [
   {
     path: "/",
@@ -14,11 +17,11 @@ const routes = [
   },
   {
     path: "/SpotifyPlayer",
-    component: () => import("pages/players/SpotifyPlayer.vue"),
+    component: SpotifyPlayer,
   },
   {
     path: "/OtoMusicPlayer",
-    component: () => import("pages/players/OtoMusicPlayer.vue"),
+    component: OtoMusicPlayer,
   },
 
   // Always leave this as last one,

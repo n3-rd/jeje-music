@@ -63,7 +63,7 @@
 
 <script>
 import { defineComponent } from "vue";
-
+import fetchJsonp from "fetch-jsonp";
 export default defineComponent({
   name: "SearchPage",
   data() {
@@ -74,10 +74,13 @@ export default defineComponent({
   },
   methods: {
     fetchSongs: function () {
+      // fetch(
+      //   `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${this.searchSongText}&output=json`
+      // )
+      // fetch(`http://192.168.43.235:1987/deezer-emiliana.json`)
       fetch(
         `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${this.searchSongText}&output=json`
       )
-        // fetch(`http://192.168.43.235:1987/deezer-emiliana.json`)
         .then((response) => response.json())
         .then((data) => {
           console.log(data);

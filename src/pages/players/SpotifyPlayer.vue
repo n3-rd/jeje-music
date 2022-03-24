@@ -22,19 +22,19 @@
 
     <div class="track q-px-md">
       <div class="album-art">
-        <!-- <img
+        <img
           src="~/assets/7846.jpg"
           class="album-art-image"
           ref="albumArtImage"
           alt=""
-        /> -->
+        />
 
-        <img
+        <!-- <img
           :src="localSongImage"
           class="album-art-image"
           ref="albumArtImage"
           alt=""
-        />
+        /> -->
       </div>
 
       <div class="row song-details">
@@ -155,8 +155,11 @@ export default {
 };
 </script>
 <style lang="scss">
+.q-toolbar {
+  position: absolute;
+}
 .root {
-  background: #000;
+  background-color: #000 !important;
   height: 100vh;
   width: 100vw;
   overflow: hidden;

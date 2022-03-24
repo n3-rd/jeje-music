@@ -14,6 +14,7 @@
     "@quasar/extras": "^1.0.0",
     "colorthief": "^2.3.2",
     "core-js": "^3.6.5",
+    "fetch-jsonp": "^1.2.1",
     "html-screen-capture-js": "^2.0.3",
     "quasar": "^2.0.0",
     "vue": "^3.0.0",
