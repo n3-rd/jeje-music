@@ -78,7 +78,7 @@ export default defineComponent({
       //   `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${this.searchSongText}&output=json`
       // )
       // fetch(`http://192.168.43.235:1987/deezer-emiliana.json`)
-      fetch(
+      fetchJsonp(
         `https://thingproxy.freeboard.io/fetch/https://api.deezer.com/search?q=${this.searchSongText}&output=json`
       )
         .then((response) => response.json())
