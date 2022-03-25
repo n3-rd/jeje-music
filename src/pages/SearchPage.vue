@@ -36,7 +36,7 @@
           storeSelectedSongInfo(
             song.title,
             song.artist.name,
-            song.album.cover_medium,
+            song.album.cover_big,
             song.album.title,
             song.duration
           )
