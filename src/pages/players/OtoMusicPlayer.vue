@@ -14,6 +14,7 @@
           class="album-art-image"
           ref="albumArtImage"
           alt=""
+          crossorigin="anoynymous"
         />
       </div>
 
@@ -118,7 +119,7 @@
   z-index: 99;
   .track {
     .album-art {
-      width: 100%;
+      width: 93vw;
       margin-top: 77px;
       img {
         width: 100%;
@@ -145,6 +146,8 @@
 <script>
 import ColorThief from "../../../node_modules/colorthief/dist/color-thief.mjs";
 const colorThief = new ColorThief();
+// const img = document.querySelector("img");
+// img.crossOrigin = "Anonymous";
 
 export default {
   data() {
