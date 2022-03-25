@@ -3,18 +3,18 @@
   <div class="root">
     <div class="track q-px-md">
       <div class="album-art">
-        <img
+        <!-- <img
           src="~/assets/7846.jpg"
           class="album-art-image"
           ref="albumArtImage"
           alt=""
-        />
-        <!-- <img
+        /> -->
+        <img
           :src="localSongImage"
           class="album-art-image"
           ref="albumArtImage"
           alt=""
-        /> -->
+        />
       </div>
 
       <div class="range-slider q-mt-md">

@@ -79,7 +79,7 @@ export default defineComponent({
       // )
       // fetch(`http://192.168.43.235:1987/deezer-emiliana.json`)
       fetch(
-        `https://achieved-kindhearted-muse.glitch.me/useproxy?link=https://api.deezer.com/search?q=emiliana&output=json`
+        `https://achieved-kindhearted-muse.glitch.me/useproxy?link=https://api.deezer.com/search?q=${this.searchSongText}&output=json`
       )
         .then((response) => response.json())
         .then((data) => {
